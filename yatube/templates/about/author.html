@@ -1,0 +1,30 @@
+<!-- templates/about/author.html -->
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Об авторе проекта{% endblock %}
+{% block content %}
+<div class="media">
+  <h1 class="display-4">Привет, я автор!</h1>
+  <p class="lead">
+    Привет, меня зовут Иван. Я из 
+    <a href ="https://ru.wikipedia.org/wiki/Пенза" target="_blank">города Пенза</a>, 
+    <a href="https://penza-sputnik.ru/" target="_blank">микрорайон Спутник</a>. Мой профиль на
+    <a href="https://github.com/ivkpenza" target="_blank">Github</a>.  
+    Работаю на мясоперерабатывающем предприятии. Ряд причин привел меня 
+    на ЯП:
+      <ul class="lead">
+        <li>девять лет подряд думаю: "ЧТО Я ЗДЕСЬ ДЕЛАЮ???"</li>
+        <li>появилась программа софинансирования обучения от государства</li>
+        <li>хочется хорошо зарабатывать</li>
+        <li>делать работу, которая, действительно, приносит пользу</li>
+      </ul>
+  </p>
+  <hr class="my-4">
+  <div class="alert alert-success" role="alert">
+    <p>
+      <img src="{% static 'img/anfisa.jpg'%}" class="align-self-center mr-3"  width="300" height="300" alt="Анфиса">
+      У меня есть кошка Анфиса, и во время обучения она совсем не помогала.
+    </p>
+  </div>  
+</div>
+{% endblock %} 
