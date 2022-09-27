@@ -7,9 +7,11 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ('text', 'group')
-
-    def clean_subject(self):
-        text = self.cleaned_data['text']
-        if text == '':
-            raise forms.ValidationError('Поле не заполнено')
-        return text
+        labels = {
+            'text': 'Введите текст',
+            'group': 'Выберите группу'
+            }
+        help_text = {
+            'text': 'Любую абракадабру',
+            'group': 'Из уже существующих'
+            }
