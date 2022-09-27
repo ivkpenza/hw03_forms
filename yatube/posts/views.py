@@ -50,6 +50,7 @@ def post_create(request):
             post.author = request.user
             post.save()
             return redirect('posts:profile', request.user.username)
+        form = PostForm()
     context = {
         'form': form,
     }
