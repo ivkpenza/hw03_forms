@@ -10,8 +10,8 @@ class PostForm(forms.ModelForm):
         labels = {
             'text': 'Введите текст',
             'group': 'Выберите группу'
-            }
+        }
         help_text = {
             'text': 'Любую абракадабру',
             'group': 'Из уже существующих'
-            }
+        }
