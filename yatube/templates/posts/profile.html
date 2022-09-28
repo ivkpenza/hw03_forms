@@ -13,7 +13,7 @@
         <li>
           Автор: {{ post.author.get_full_name }}
           <br>
-          <a href="{% url 'posts:profile' author.get_full_name %}">все посты пользователя</a>
+          <a href="{% url 'posts:profile' post.author.username %}">все посты пользователя</a>
             </li>
             <li>
               Дата публикации: {{ post.pub_date|date:"d E Y" }} 
