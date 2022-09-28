@@ -12,6 +12,6 @@ class PostForm(forms.ModelForm):
             'group': 'Выберите группу'
         }
         help_text = {
-            'text': 'Любую абракадабру',
+            'text': 'Интересующую вас тему',
             'group': 'Из уже существующих'
         }
